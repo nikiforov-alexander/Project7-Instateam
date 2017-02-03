@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
@@ -29,7 +29,7 @@
     <div class="container wrapper">
 
 
-            <form th:action="@{/add-role}" th:object="${role}" method="post">
+            <form th:action="@{/add-role}" th:object="${newRole}" method="post">
                 <h2>Manage Roles</h2>
                 <div th:each="role : ${roles}" >
                     <ul class="checkbox-list">
